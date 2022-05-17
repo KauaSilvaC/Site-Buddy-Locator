@@ -1,0 +1,213 @@
+body{
+    margin:0;
+    background: linear-gradient(45deg, #1d161e, #4c1c46, #282b75/*, #a296ca, #2b1d5a*/,#4c1c46 , #1d161e);
+    background-size: 400% 400%;
+    animation: colors 15s ease infinite;
+
+}
+.stars{
+    position: relative;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    500px 250px greenyellow,
+    320px 100px white;
+    
+    animation: animarstar 25s linear infinite;
+}
+
+.stars::after{
+    content: " ";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+    100px 80px white,
+    80px 120px white,
+    300px 20px white,
+    250px 130px white,
+    200px 50px white,
+    150px 100px white,
+    320px 100px white;
+}
+
+.stars2{
+    position: relative;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+    animation: animarstar 50s linear infinite;
+  }
+  
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+  }
+  
+
+@keyframes animarstar {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-150px);
+    }
+    
+}
+@keyframes colors{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+.efeito{
+    border: none;
+    color:white;
+    padding: 10px;
+    margin: 0px;
+    font-size: 15px;
+    line-height: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.efeito-1{
+    background-color: blueviolet;
+}
+
+.efeito-1:before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 45px;
+    background: #1d161ed7;
+    border-radius: 10px;
+    transition: all 2s ease;
+}
+
+.efeito-1:hover:before{
+    width: 100%;
+}
+
+.efeito-2{
+    background-color: #1d161ed7;
+    color: white;
+}
+
+.efeito-2:hover{
+    background: #1d161ed7;
+    color: #bb29a7;
+    box-shadow: inset 0 0 0 3px #1d161ed7
+}
+
+.navbar{
+    background: #1d161ed7;
+    color: white;
+    padding: 1px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(13.5);
+    border-radius: 0px;
+    border: 0px solid rgba(131, 7, 148, 0.18);
+}
+
+.navbar img{
+    height: 50px;
+    width: 50px;
+    margin: 0px;
+    padding-right: 2vw;
+    padding-left: 0px;
+    padding-bottom: 2px;
+    padding-top: 0px;
+    
+}
+
+li{
+    display: inline-block;
+    padding-right: 5vw;
+    
+}
+.linha{
+    /*margin: 10px 0;
+    height: 2px;
+    background-color: black;
+    background: -webkit-gradient(linear, 0 0, from(rgb(255, 0, 212)), to(white), color-stop(50%, black) );*/
+    border: 1px;
+    height: 1px;
+    background-image: linear-gradient(to left, transparent, rgb(247, 0, 255));
+}
+.banner{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*width: 100vw;*/
+    height: 500px;
+    background-color: #1d161ed7;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-right: 20px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.content{
+    background: #1d161ed7;
+    color: white;
+    padding: 1px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+    backdrop-filter: blur(13.5);
+    border-radius: 15px;
+    border: 1px solid rgba(131, 7, 148, 0.18);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.galeria img{
+    height: 150px;
+
+}
+
